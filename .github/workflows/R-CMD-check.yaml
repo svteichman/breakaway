@@ -71,6 +71,7 @@ jobs:
           remotes::install_deps(dependencies = TRUE)
           remotes::install_cran("rcmdcheck")
           if (!requireNamespace("BiocManager", quietly = TRUE)){install.packages("BiocManager")}; BiocManager::install("phyloseq", ask = FALSE)
+          remotes::install_github("adw96/DivNet")
         shell: Rscript {0}
 
 

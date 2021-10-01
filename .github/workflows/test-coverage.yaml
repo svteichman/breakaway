@@ -43,7 +43,7 @@ jobs:
           install.packages(c("remotes"))
           if (!requireNamespace("BiocManager", quietly = TRUE)){install.packages("BiocManager")}; BiocManager::install(c("phyloseq", "limma"), ask = FALSE)
           remotes::install_deps(dependencies = TRUE)
-          remotes::install_cran("covr")
+          remotes::install_github("adw96/DivNet")
         shell: Rscript {0}
 
       - name: Test coverage
