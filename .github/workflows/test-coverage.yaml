@@ -42,6 +42,7 @@ jobs:
           remotes::install_deps(dependencies = TRUE)
           remotes::install_cran("covr")
           remotes::install_github("adw96/DivNet")
+          remotes::install_github("bryandmartin/corncob")
         shell: Rscript {0}
 
       - name: Test coverage
