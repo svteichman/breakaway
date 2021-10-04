@@ -39,6 +39,7 @@ Suggests: corncob,
     plyr,
     RCurl,
     rmarkdown,
-    tidyverse
+    tidyverse,
+    DivNet
 VignetteBuilder: knitr
 URL: https://adw96.github.io/breakaway/
