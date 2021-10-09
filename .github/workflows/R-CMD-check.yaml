@@ -62,7 +62,6 @@ jobs:
           if (!requireNamespace("BiocManager", quietly = TRUE)){install.packages("BiocManager")}; BiocManager::install(c("phyloseq"), ask = FALSE)
           remotes::install_deps(dependencies = TRUE)
           remotes::install_cran("rcmdcheck")
-          remotes::install_github("adw96/DivNet")
           remotes::install_github("bryandmartin/corncob")
         shell: Rscript {0}
 
