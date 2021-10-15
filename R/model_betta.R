@@ -139,7 +139,7 @@ betta <- function(chats = NULL, ses, X = NULL,
     }
   }
   if (!is.null(formula)) {
-    ses <- data[,deparse(substitute(ses))]
+    ses <- data[,deparse(substitute(ses))] + 1
     X <- stats::model.matrix(formula, data)
     chats <- stats::model.response(stats::model.frame(formula = formula, data = data))
   }
