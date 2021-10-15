@@ -75,7 +75,7 @@ betta_random <- function(chats = NULL, ses, X = NULL, groups = NULL, formula = N
     }
   }
   if (!is.null(formula)) {
-    ses <- data[,deparse(substitute(ses))]
+    ses <- data[,deparse(substitute(ses))] + 1
     group_var <- lme4:::barnames(lme4::findbars(lme4:::RHSForm(formula)))
     groups <- data[,group_var]
     full_form <- lme4::subbars(formula)
